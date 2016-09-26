@@ -48,6 +48,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var self = this;
+  var lookup = {"2":"扬州江少","4":"交通大学","8":"益民食品","16":"设计二局","32":"长春一汽","64":"电子工业","128":"上海市长","256":"中央决定","512":"九八抗洪","1024":"钦定特首","2048":"三代核心","4096":"闷声发财","8192":""}
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
@@ -62,7 +63,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  inner.textContent = lookup[tile.value] || "";
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -109,19 +110,19 @@ HTMLActuator.prototype.updateScore = function (score) {
   var difference = score - this.score;
   this.score = score;
 
-  this.scoreContainer.textContent = this.score;
+  this.scoreContainer.textContent = this.score + " s";
 
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    addition.textContent = "+" + difference;
+    addition.textContent = "+" + difference + " s";
 
     this.scoreContainer.appendChild(addition);
   }
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.bestContainer.textContent = bestScore;
+  this.bestContainer.textContent =  "续" + bestScore + "秒";
 };
 
 HTMLActuator.prototype.message = function (won) {

@@ -747,12 +747,12 @@ hr {
     transform: translate(202px, 202px); }
 
   .tile .tile-inner {
-    font-size: 25px; }
+    font-size: 22px; }
 
   .game-message p {
-    font-size: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important;
+    font-size: 20px !important;
+    height: 20px !important;
+    line-height: 20px !important;
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }

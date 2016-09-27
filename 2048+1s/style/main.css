@@ -535,7 +535,7 @@ hr {
 
 @media screen and (max-width: 520px) {
   html, body {
-    font-size: 15px; }
+    font-size: 18px; }
 
   body {
     margin: 20px 0;
@@ -550,9 +550,9 @@ hr {
     margin: 0 auto; }
 
   .score-container, .best-container {
-    margin-top: 0;
+    margin-top: 5px;
     padding: 15px 10px;
-    min-width: 40px; }
+    min-width: 30px; }
 
   .heading {
     margin-bottom: 10px; }

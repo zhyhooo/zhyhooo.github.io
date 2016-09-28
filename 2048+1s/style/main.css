@@ -533,8 +533,10 @@ hr {
 .game-explanation {
   margin-top: 50px; }
 
-.qrcode {
-  margin-top: 50px; }
+.qr-code {
+  display:block;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 520px) {
   html, body {

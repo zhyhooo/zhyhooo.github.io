@@ -48,7 +48,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var self = this;
-  var lookup = {"2":"扬州江少","4":"交通大学","8":"益民食品","16":"设计二局","32":"长春一汽","64":"电子工业","128":"上海市长","256":"中央决定","512":"九八抗洪","1024":"钦定特首","2048":"三代核心","4096":"闷声发财","8192":""}
+  var lookup = {"2":"扬州江少","4":"交通大学","8":"益民食品","16":"设计二局","32":"长春一汽","64":"电子工业","128":"上海市长","256":"九八抗洪","512":"钦定特首","1024":"三代核心","2048":"闷声发财","4096":"亦可赛艇","8192":""}
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
@@ -127,7 +127,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "谈笑风生又一轮!" : "还要提高姿势水平!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;

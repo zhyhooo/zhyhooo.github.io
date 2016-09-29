@@ -77,7 +77,7 @@ h1.title {
   float: right; }
 
 .game-container {
-  margin-top: 40px;
+  margin-top: 50px;
   position: relative;
   padding: 15px;
   cursor: default;
@@ -91,9 +91,32 @@ h1.title {
   background: #bbada0;
   border-radius: 6px;
   width: 500px;
-  height: 500px;
+  height: 450px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.ball {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50px;
+  position: absolute; 
+  left: 50%; 
+  top: 380px;
+  margin-left: -25px;
+  background-color: #34538b;
+  background-image: -webkit-radial-gradient(50px 50px at 25px 10px, #a0b3d6, #34538b);
+  background-image:    -moz-radial-gradient(50px 50px at 25px 10px, #a0b3d6, #34538b);
+  background-image:         radial-gradient(50px 50px at 25px 10px, #a0b3d6, #34538b);
+  cursor: move;
+  z-index: 1; }
+
+.shadow {
+  position: absolute;
+  width: 50px; height: 20px;
+  position: absolute; left: 50%; bottom: 5px;
+  background-image: -webkit-radial-gradient(ellipse closest-side, rgba(0,0,0,.75), rgba(0,0,0,0));
+  background-image:    -moz-radial-gradient(ellipse closest-side, rgba(0,0,0,.75), rgba(0,0,0,0));
+  background-image:         radial-gradient(ellipse closest-side, rgba(0,0,0,.75), rgba(0,0,0,0));
+  margin-left: -25px; }
 

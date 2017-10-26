@@ -1,32 +1,32 @@
 var files = {
 	"shrubs": [
-		"example",
-		"example",
-		"example",
-		"example",
-		"example"
+		"shrubs_example_1",
+		"shrubs_example_2",
+		"shrubs_example_3",
+		"shrubs_example_4",
+		"shrubs_example_5"
 	],
 	"trees": [
-		"Ash",
-		"Birch",
-		"Butternut",
-		"Elm",
-		"Hickory",
-		"Locust",
-		"Maple",
-		"Oak"
+		"trees_Ash",
+		"trees_Birch",
+		"trees_Butternut",
+		"trees_Elm",
+		"trees_Hickory",
+		"trees_Locust",
+		"trees_Maple",
+		"trees_Oak"
 	],
 	"vines": [
-		"example",
-		"example"
+		"vines_example_1",
+		"vines_example_2"
 	],
-	"succulent plants": [
-		"example",
-		"example"
+	"succulent": [
+		"succulent_example_1",
+		"succulent_example_2"
 	],
-	"herbaceous plants": [
-		"example",
-		"example",
-		"example"
+	"herbaceous": [
+		"herbaceous_example_1",
+		"herbaceous_example_2",
+		"herbaceous_example_3"
 	]
 };

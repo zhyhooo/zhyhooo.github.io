@@ -27,7 +27,7 @@
 
 	<body>
 		<div id="info">
-		<a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - OBJLoader + MTLLoader
+		<a href="http://#" target="_blank" rel="noopener">3D demo</a> - Tree / Oak
 		</div>
 
 		<script src="../build/three.js"></script>
@@ -69,13 +69,13 @@
 				var onError = function ( xhr ) { };
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 				var mtlLoader = new THREE.MTLLoader();
-				mtlLoader.setPath( 'obj/male02/' );
-				mtlLoader.load( 'male02_dds.mtl', function( materials ) {
+				mtlLoader.setPath( 'obj/oak/' );
+				mtlLoader.load( 'indoor_plant_02.mtl', function( materials ) {
 					materials.preload();
 					var objLoader = new THREE.OBJLoader();
 					objLoader.setMaterials( materials );
-					objLoader.setPath( 'obj/male02/' );
-					objLoader.load( 'male02.obj', function ( object ) {
+					objLoader.setPath( 'obj/oak/' );
+					objLoader.load( 'indoor_plant_02.obj', function ( object ) {
 						object.position.y = - 95;
 						scene.add( object );
 					}, onProgress, onError );

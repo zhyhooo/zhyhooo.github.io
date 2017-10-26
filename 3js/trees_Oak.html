@@ -76,7 +76,8 @@
 					objLoader.setMaterials( materials );
 					objLoader.setPath( 'obj/oak/' );
 					objLoader.load( 'indoor_plant_02.obj', function ( object ) {
-						object.position.y = - 5;
+						obj.scale.set( 3, 3, 3 );
+						object.position.y = 0;
 						scene.add( object );
 					}, onProgress, onError );
 				});

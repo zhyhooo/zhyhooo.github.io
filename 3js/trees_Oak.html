@@ -51,7 +51,7 @@
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 200 );
-				camera.position.z = 5;
+				camera.position.z = 50;
 				// scene
 				scene = new THREE.Scene();
 				var ambient = new THREE.AmbientLight( 0x888888 );
@@ -87,7 +87,7 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-				document.addEventListener( 'touchup', onDocumentMouseMove, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
 				//
 				window.addEventListener( 'resize', onWindowResize, false );
@@ -104,6 +104,10 @@
 				mouseY = ( event.clientY - windowHalfY ) / 2;
 			}
 			//
+			function onDocumentTouchMove( event ) {
+				mouseX = ( event.touches[0].clientX - windowHalfX ) / 2;
+				mouseY = ( event.touches[0].clientY - windowHalfY ) / 2;
+			}
 			function animate() {
 				requestAnimationFrame( animate );
 				render();

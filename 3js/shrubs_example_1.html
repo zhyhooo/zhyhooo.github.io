@@ -86,6 +86,7 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 				//
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
@@ -101,6 +102,10 @@
 				mouseY = ( event.clientY - windowHalfY ) / 2;
 			}
 			//
+			function onDocumentTouchMove( event ) {
+				mouseX = ( event.touches[0].clientX - windowHalfX ) / 2;
+				mouseY = ( event.touches[0].clientY - windowHalfY ) / 2;
+			}
 			function animate() {
 				requestAnimationFrame( animate );
 				render();

@@ -1,0 +1,31 @@
+body {
+    font-family: Monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    overflow: hidden;
+}
+#info {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+}
+#info a, .button {
+    color: #f00;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer
+}
+#descrpt {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    /*margin-left: -100px;*/
+    z-index: 101;
+    display:block;
+}

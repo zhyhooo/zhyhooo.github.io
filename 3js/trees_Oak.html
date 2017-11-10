@@ -4,31 +4,17 @@
 		<title>3d demo - Tree / Oak</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				font-family: Monospace;
-				background-color: #000;
-				color: #fff;
-				margin: 0px;
-				overflow: hidden;
-			}
-			#info {
-				color: #fff;
-				position: absolute;
-				top: 10px;
-				width: 100%;
-				text-align: center;
-				z-index: 100;
-				display:block;
-			}
-			#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
 	<body>
 		<div id="info">
 		<a href="http://#" target="_blank" rel="noopener">3D demo</a> - Tree / Oak
 		</div>
+		<div id="descrpt">
+			<p>hello</p>
+		</div>
+
 
 		<script src="build/three.js"></script>
 
@@ -43,9 +29,7 @@
 		<script>
 			var container, stats;
 			var camera, scene, renderer;
-			var mouseX = 0, mouseY = 0;
-			var windowHalfX = window.innerWidth / 2;
-			var windowHalfY = window.innerHeight / 2;
+
 			init();
 			animate();
 

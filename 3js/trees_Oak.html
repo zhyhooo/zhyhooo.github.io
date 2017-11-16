@@ -11,9 +11,6 @@
 		<div id="info">
 		<a href="http://#" target="_blank" rel="noopener">3D demo</a> - Tree / Oak
 		</div>
-		<div id="descrpt">
-			<p>hello</p>
-		</div>
 
 
 		<script src="build/three.js"></script>
@@ -56,7 +53,9 @@
 				scene = new THREE.Scene();
 				setupScene();
 				// model
-				loadobj()
+				loadobj();
+				// description
+				showDesc();
 
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
@@ -84,6 +83,13 @@
 						scene.add( object );
 					}, onProgress, onError );
 				});
+			}
+
+			function showDesc(){
+				var namecard = document.createElement( 'div' );
+				namecard.id = "namecard";
+				namecard.textContent = "hello 3d"
+				document.body.appendChild( namecard );
 			}
 
 			function setupScene(){

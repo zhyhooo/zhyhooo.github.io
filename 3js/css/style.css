@@ -20,12 +20,17 @@ body {
     text-decoration: underline;
     cursor: pointer
 }
-#descrpt {
+#namecard {
     color: #fff;
     position: absolute;
-    bottom: 10px;
-    width: 80%;
-    /*margin-left: -100px;*/
-    z-index: 101;
-    display:block;
+    bottom: 20px;
+    width: 40%;
+    left: 30%;
+    height: 100px;
+    z-index: 99;
 }
+
+.plant_name {
+    color: #8fc;
+}
+

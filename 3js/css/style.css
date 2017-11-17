@@ -24,13 +24,30 @@ body {
     color: #fff;
     position: absolute;
     bottom: 20px;
-    width: 40%;
-    left: 30%;
+    width: 30%;
+    left: 35%;
     height: 100px;
     z-index: 99;
 }
 
-.plant_name {
-    color: #8fc;
+#namecard,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#plantInfoTable {
+    width:100%;
+    font-size: 12px;
+    border: solid 1px #333;
+    padding: 5px;
+}
+
+#plantInfoTable .td {
+    width: 50%;
+}
+
+#plantInfoTable .attr_key {
+    width: 15%;
+    font-weight: bold;
 }
 

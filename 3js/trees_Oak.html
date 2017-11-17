@@ -14,6 +14,7 @@
 
 
 		<script src="build/three.js"></script>
+		<script src="js/Description.js"></script>
 
 		<script src="js/loaders/DDSLoader.js"></script>
 		<script src="js/loaders/MTLLoader.js"></script>
@@ -85,12 +86,7 @@
 				});
 			}
 
-			function showDesc(){
-				var namecard = document.createElement( 'div' );
-				namecard.id = "namecard";
-				namecard.textContent = "hello 3d"
-				document.body.appendChild( namecard );
-			}
+
 
 			function setupScene(){
 				var ambient = new THREE.AmbientLight( 0xeeeeee );

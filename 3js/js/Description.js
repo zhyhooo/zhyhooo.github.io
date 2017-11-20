@@ -4,6 +4,14 @@
 
 function showDesc(){
     var str_name = "橡树";
+    var str_kingdom = "植物界";
+    var str_phylum = "种子植物门";
+    var str_class = "木兰纲";
+    var str_order = "壳斗目";
+    var str_family = "壳斗科";
+    var str_genus = "栎属";
+
+
     var namecard = document.createElement( 'div' );
     namecard.id = "namecard";
     var table = document.createElement('table');
@@ -12,13 +20,14 @@ function showDesc(){
 
     var thead = "<h2>"+str_name+"</h2>";
     table.appendChild(createOneRowOneColumn(thead, str_name));
-    table.appendChild(createRow(createAttr("界：","植物界"),
-                                createAttr("门：","种子植物门")));
-    table.appendChild(createRow(createAttr("纲：","木兰纲"),
-                                createAttr("目：","壳斗目")));
-    table.appendChild(createRow(createAttr("科：","壳斗科"),
-                                createAttr("属：","栎属")));
-    //table.appendChild(createDesc("落叶或常绿乔木，高达25至30米甚至以上。树皮暗灰褐色，略平滑。小枝褐色，无毛。"))
+    table.appendChild(createRow(createAttr("界：", str_kingdom),
+                                createAttr("门：", str_phylum)));
+    table.appendChild(createRow(createAttr("纲：", str_class),
+                                createAttr("目：", str_order)));
+    table.appendChild(createRow(createAttr("科：", str_family),
+                                createAttr("属：", str_genus)));
+    table.appendChild(createDesc("落叶或常绿乔木，高达25至30米甚至以上。树皮暗灰褐色，略平滑。小枝褐色，无毛。" +
+        "冬芽长卵形，长 3—5毫米，无毛，芽鳞暗褐色，多数，覆瓦状排列。"))
     namecard.appendChild(table);
 
     document.body.appendChild( namecard );
@@ -47,6 +56,7 @@ function createOneRowTwoColumn(strLeft, strRight){
 function createDesc( text ) {
     var desc = document.createElement("td");
     desc.innerHTML = text;
+    desc.colSpan = 2;
     var row = document.createElement("tr");
     row.appendChild(desc);
     return row;

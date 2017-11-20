@@ -27,7 +27,7 @@ body {
     width: 320px;
     bottom: 20px;
     left: 50%;
-    height: 100px;
+    /*height: 100px;*/
     z-index: 99;
 }
 
@@ -45,6 +45,7 @@ body {
 
 #plantInfoTable td {
     width: 50%;
+    padding: 2px;
 }
 
 #plantInfoTable .attr_key {
